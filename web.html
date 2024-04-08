@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+           background: rgb(0, 0, 0);
+           margin: 2px;
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: black;
+        }
+        .navbar{
+            
+            color:white;
+            display: flex;
+            gap: 2rem;
+            font-size: 20px;
+            /* margin-left: 69%; */
+            align-items: center;
+          
+        }
+        .navbar a:hover{
+            color:rgba(251, 247, 2, 0.8);
+        }
+        .hi{
+            display:flex;
+            margin-top: 150px;
+            color: aliceblue;
+            display:flex;
+            justify-content:space-between;
+            
+        } 
+        .line{
+            display: flex;
+            margin-right: 400px;
+        }
+        .line1{
+            display: flex;
+            margin-left: 15%;
+        }
+        .line3{
+            display: flex;
+            margin-left: 0.1%;
+        }
+        .button {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+            height: 45px;
+            width: 150px;
+            border-radius: 6px;
+        }
+        .button:hover {
+            background-color: #555555;
+            color: white;
+        }
+       
+        .imag1{
+            position: absolute;
+            top: 0.5%;
+            margin-left: 68%;
+            height: 700px;
+            margin-bottom: 100px;
+            z-index: -1;
+        }
+        .nav{
+            width: 50px;
+            justify-content: flex-start;
+            size: 100px;
+        }
+       
+        .nextpage{
+            margin-top: 60px;
+            color: white;
+            background-image: linear-gradient(180deg,#efe933d8,#000000,#000000);   
+        }
+        .cover{
+            width: 900px;
+            height: 400px;
+            margin-top: 50px;
+            display: flex;
+        }
+        .viweall{
+            border-color: yellow;
+            color: rgb(246, 246, 246);
+            background-color: black;
+            height: 40px;
+            width: 100px;
+            border-radius: 6px;
+        }
+        .pera{
+            margin-left: 6%;
+            height: 500px;
+            font-size: 27px;
+        }
+        .yellow-text {
+           
+            color: yellow;
+        }
+        .service
+        {
+            font-size: 17px;
+        }
+        .boxtextourservice{
+            margin-top: 20%;
+        }
+        .formideaall{
+            display: flex;
+           text-align: center;
+           margin-right: 80px; 
+           font-size: 28px;
+           align-items: center;
+           justify-content: center; 
+        }
+        .formidea{
+            margin-left: 10%;
+            margin-top: 15%;
+            
+        }
+        
+        .flex-container{
+            width: 100%;
+            height: auto;
+            gap: 4.5%;
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-box
+        {
+            width: 430px;
+            height: 300px;
+            background: black;
+            text-align: left;
+            padding-right: 2%;
+            line-height: 20px;
+            border-radius: 9px;
+            padding-left: 3% ;
+            font-size: 20px;
+            transition: transform .2s;
+            margin: 10px;
+        }
+        .flex-box1 ,.flex-box2
+        {
+            width: 430px;
+            transition: transform .2s;
+            height: 300px;
+            background:linear-gradient(0deg,rgba(255, 255, 0, 0.534),black);
+            text-align: left;
+            padding-right: 2%;
+            z-index: 100;
+            line-height: 20px;
+            border-radius: 9px;
+            padding-left: 3% ;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .boxline1, .boxline2
+        {
+            display: flex;
+        }
+        .leftbox
+        {
+            background-color: #000000;
+            height: 450px;
+            width: 30%;
+            transition: transform .2s;
+            font-size: 30px;
+            align-items: left;
+            margin-left: 4%;
+            padding-top: 5px ;
+            padding-right: 6px;
+            padding-left: 40px;
+            justify-content: center;
+        }
+        .boxtext
+        {
+            font-size: 16px;
+        }
+        .icon
+        {
+            display: flex;
+            font-size: 80px;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 8%;
+            margin-top: 5%;
+        }
+        .line1{
+            background-color: rgb(255, 242, 0);
+            height: 5px;
+          margin-left: 40%;
+            border: none;
+            width: 20%;
+        }
+        .icon, .botm, .formideaall
+        {
+            z-index: 100;
+        }
+        .imag3
+        {
+            position: absolute;
+            top: 95%;
+            z-index: -2;
+            right: 14%;
+            height: 800px;
+        }
+        .flex-box1:hover
+        {
+            transform: scale(1.1);
+        }
+        .flex-box2:hover
+        {
+            transform: scale(1.1);
+        }
+        .flex-box:hover
+        {
+            transform: scale(1.1);
+        }
+        .leftbox:hover
+        {
+            transform: scale(1.1);
+        }
+        .cur
+        {      
+            font-family: "Lavishly Yours", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .icon div:hover
+        {
+            color: rgb(255, 242, 0);
+        }
+        .navbar div:hover{
+            color: rgb(255, 242, 0);
+
+        }
+        .imag100
+        {
+            width: 100px;
+            height: 50px;
+            color: yellow;
+            margin-right: 58rem;
+        }
+    </style>   
+</head>
+<body>
+    <div class="header"> 
+      <nav class="navbar">
+        <img class="imag100" src="490.png" alt="Girl thinking images">
+        <a class="nav" >Contact</a>
+        <a class="nav" >Server</a>
+        <a class="nav" >Profile</a>
+        <div><i class='bx bx-menu'></i></div>
+      </nav>
+    </div>
+    <div class="hi">
+        <div class="pera">
+        <h4>CREATIVE AGENCY</h4>
+        <h1>THE <span class="yellow-text">COLLAB HOUSE</span> OF <br> DIGITAL MARKETING</h1>
+        <hr class="line" size="4" width="50%" color="yellow"> 
+        <p>we assist new and existing bussiness<br>Owners from IDEA to Launch</p>
+        <p class="cur">Mahesh Kumar</p>
+        <button onclick="talk()"class="button button1">LET'S TALK</button>
+        </div>
+    </div>
+    <div class="image">
+        <img class="imag1" src="images-removebg-preview.png" alt="Girl thinking images">
+    </div>
+
+    <div class="nextpage">
+    <div class="formideaall">
+        
+        <h1 class="formidea">FORM IDEA TO LAUNCH</h1>
+        
+    </div>
+    <div class="botm">
+        <hr class="line1"> 
+    </div>
+    <div class="icon">
+        <div><i class='bx bx-search-alt'></i></div> 
+        <div><i class='bx bx-bulb'></i></div>
+        <div><i class='bx bxs-badge-dollar'></i></div>
+        <div><i class="fa fa-line-chart"></i></div>
+        <div><i class="fa fa-camera"></i></div>
+        <div><i class="ri-global-line"></i></div>
+    </div>
+    <div class="flex-container">
+        <div class="leftbox">
+            <h4 class="boxtextourservice"><span class="yellow-text service">OUR SERVICE</span></h4>
+            <h1>WHAT WE <span class="yellow-text">DO.</span></h1>
+            <hr class="line3" size="4" width="50%" color="yellow">
+            <p class="boxtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>
+            <button class="viweall">VIEW ALL</button>
+        </div>
+        <div class="boxline">
+            <div class="boxline1">
+                <div class="flex-box">
+                    <h4>BRAND PROTECTION</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ,Fugiat voluptatum assumenda est minima cumis quisquam odit eaque architecto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere possimus ad vitae exercitationem vero. Veniam, eveniet autem pariatur tenetur cumque et dolorum! Magnam, eveniet?</p>
+                </div>
+                <div class="flex-box1">
+                    <h4>BRAND VOICE</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ,Fugiat voluptatum assumenda est minima cumis quisquam odit eaque architecto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere possimus ad vitae exercitationem vero. Veniam, eveniet autem pariatur tenetur cumque et dolorum! Magnam, eveniet?</p>
+                </div>
+            </div>
+            <div class="boxline2">
+                <div class="flex-box2">
+                    <h4>BRAND IDENTITY<br>PHOTOGRAPHY</h4>
+                    <p>LLorem ipsum dolor sit amet consectetur adipisicing elit. ,Fugiat voluptatum assumenda est minima cumis quisquam odit eaque architecto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere possimus ad vitae exercitationem vero. Veniam, eveniet autem pariatur tenetur cumque et dolorum! Magnam, eveniet?</p>
+                </div>
+                <div class="flex-box">
+                    <h4>BRAND DISING</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ,Fugiat voluptatum assumenda est minima cumis quisquam odit eaque architecto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere possimus ad vitae exercitationem vero. Veniam, eveniet autem pariatur tenetur cumque et dolorum! Magnam, eveniet?</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <img class="imag3" src="girltwo.png" alt="Girl thinking images"> 
+        </div>
+    </body>
+    </html>
